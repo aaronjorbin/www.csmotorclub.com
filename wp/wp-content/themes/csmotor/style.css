@@ -1,0 +1,334 @@
+/*
+Theme Name: Clearspring Motor Club
+Description: Custom WP Theme for the Motor Club.
+Version: 1.0
+Author: FoO
+Author URI: http://www.forgetfoo.com/
+*/
+
+@font-face {
+    font-family: "ProximaNovaRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("fonts/proxima/proximanova-regular-webfont.woff") format("woff"), url("fonts/proxima/proximanova-regular-webfont.ttf") format("truetype"), url("fonts/proxima/proximanova-regular-webfont.svg") format("svg");
+	}
+
+@font-face {
+    font-family: "Trump";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("fonts/trump/trumpgoteasreg-webfont.woff") format("woff"), url("fonts/trump/trumpgoteasreg-webfont.ttf") format("truetype"), url("fonts/trump/trumpgoteasreg-webfont.svg") format("svg");
+	}
+
+body {
+    background: url(images/bkg-tile-dark.jpg);
+    margin: 0;
+    padding: 0 0 40px 0;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 14px;
+    color: #444;
+}
+a {
+    text-decoration: none;
+    color: #07c;
+}
+a:hover {
+    text-decoration: underline;
+    color: #0164ab;
+}
+#page {
+    background: url(images/bkg-tile-stripe.gif) repeat-x top;
+    padding-top: 12px;
+}
+
+
+
+/* Page Header 
+--------------------------------------------------------------------- */
+
+#header {
+    position: relative;
+    height: 145px;
+}
+#header h1 {
+    position: absolute;
+    top: 36px;
+    left: 0;    
+    width: 308px;
+    height: 86px;
+    padding: 0;
+    margin: 0;
+}
+#header h1 a {
+    display: block;
+    background: url(images/csmotorclub-logo.png) no-repeat;
+    width: 308px;
+    height: 86px;
+    line-height: 86px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+#header ul {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    height: 50px;
+    margin: 0;
+}
+#header ul li {
+    list-style: none;
+    display: inline;
+}
+#header ul li a {
+    display: block;
+    width: 118px;
+    height: 50px;
+    line-height: 50px;
+    text-indent: -9999px;
+    oveflow: hidden;
+    margin-right: 20px;
+    float: left;
+}
+#header ul li.updates a {
+    background: url(images/bkg-topnav.png) no-repeat 0 0;
+}
+#header ul li.join a {
+    background: url(images/bkg-topnav.png) no-repeat 0 -50px;
+}
+#header a.vcs {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 11px;
+    color: #fff;
+}
+
+
+
+/* Main Content
+--------------------------------------------------------------------- */
+
+#content {
+    position: relative;
+    background: url(images/bkg-tile-light.jpg);
+    padding: 25px 10px 50px 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+#content .hexnut-1,
+#content .hexnut-2,
+#content .hexnut-3,
+#content .hexnut-4 {
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+#content .hexnut-1 {
+    background: url(images/bkg-hexnut.png) no-repeat;   
+    top: 8px;
+    left: 8px;
+}
+#content .hexnut-2 {
+    background: url(images/bkg-hexnut.png) no-repeat;   
+    top: 8px;
+    right: 8px;
+}
+#content .hexnut-3 {
+    background: url(images/bkg-hexnut.png) no-repeat;   
+    bottom: 8px;
+    left: 8px;
+}
+#content .hexnut-4 {
+    background: url(images/bkg-hexnut.png) no-repeat;   
+    bottom: 8px;
+    right: 8px;
+}
+
+
+/* Blog Post
+--------------------------------------------------------------------- */
+
+.post {
+    position: relative;
+    min-height: 200px;
+    margin-bottom: 100px;
+}
+.post .entry-meta {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background: url(images/bkg-date-label.png) no-repeat;
+    width: 158px;
+    height: 60px;
+    padding: 11px 0 0;
+    text-align: center;
+}
+.post .entry-meta .entry-date {
+    display: block;
+    font-family: "Trump",arial,helvetica,sans-serif;
+    font-size: 28px;    
+    font-weight: bold;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #000;
+}
+.post .entry-meta .entry-date-year {
+    font-size: 11px;
+}
+.post .entry-content {
+    font-family: "ProximaNovaRegular",arial,helvetica,sans-serif;
+    padding: 0 30px 0 180px;
+    line-height: 1.6em;
+    font-size: 18px;
+}
+.post .entry-content img {
+    border: 1px solid #333;
+    /*box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px #666;*/
+}
+.post h2.entry-title {
+    font-family: "Trump",arial,helvetica,sans-serif;
+    font-size: 72px;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    color: #000;
+}
+.post h2.entry-title a {
+    color: #000;    
+}
+.post .entry-author {
+    font-size: 13px;
+}
+.post .entry-utility {
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    margin: 40px 0 40px 180px;
+}
+.post .entry-utility .comments-link {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    text-align: right;
+}
+.post .entry-utility .comments-link a {
+    font-family: "Trump",arial,helvetica,sans-serif;
+    font-size: 28px;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #000;
+}
+
+
+
+.bfwd {
+    height: 40px;
+    margin-left: 230px;
+}
+.bfwd a {
+    background: #07c;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-family: "Trump",arial,helvetica,sans-serif;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+
+/* Page Footer 
+--------------------------------------------------------------------- */
+
+#footer {
+    margin-top: 50px;
+    color: #fff;
+}
+#footer a {
+    color: #ffe200;
+}
+#footer .foot-label-who {
+    background: url(images/bkg-foot-label-who.png) no-repeat;
+    width: 220px;
+    height: 30px;
+}
+#footer .foot-label-team {
+    background: url(images/bkg-foot-label-team.png) no-repeat;
+    width: 461px;
+    height: 30px;
+}
+#footer .foot-label-updates {
+    background: url(images/bkg-foot-label-updates.png) no-repeat;
+    width: 220px;
+    height: 30px;
+}
+
+
+/* Common Styles 
+--------------------------------------------------------------------- */
+
+h2, h3, h4, h5, strong { color: #000; }
+.clear { clear: both; }
+.bold { font-weight: bold; }
+.blk { color: #000; }
+.hide { display: none; }
+.right { text-align: right; }
+
+
+
+
+/* Comments  
+--------------------------------------------------------------------- */
+
+.comments {	
+	margin: 40px 20px 80px 180px;
+}
+.comments h3 {
+	font-family: "Trump",arial,helvetica,sans-serif;
+	font-size: 48px;
+	line-height: 1em;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+.comments .btn { margin-top: 16px; }
+.commentlist {
+	border-top: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+.comment {
+	border-bottom: 1px dotted #ccc;
+	padding: 20px 0;
+}
+.comment .avatar {
+	width: 32px;
+	border: 1px solid #ccc;
+	float: left;
+}
+.comment .comment-inner {
+	padding-left: 48px;
+}
+.comment .commentmetadata a {
+	color: #666;
+}
+.comment .comment-entry {
+	padding-top: 15px;
+}
+.comment .comment-entry p {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+#respond {
+    margin-top: 0;
+}
+
+
